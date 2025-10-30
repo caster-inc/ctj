@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>LUVO</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="jquery-3.7.1.js"></script>
+  <script src="jquery.inview.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-logo-menu">
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <ul>
+            <li><a href="#mission">MISSION</a></li>
+            <li><a href="#what">What we do?</a></li>
+            <li><a href="#company">COMPANY</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMeqJHFtc0XXdzml6AlzUdP1oWnmw2R4eADp-_aUXZp6bCZQ/viewform">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-area">
+    <img src="images/luvo-logo.png" alt="LUVO" class="img-blur">
+  </section>
+
+  <section class="mission-area" id="mission">
+    <div class="inner">
+      <h2 class="heading josefin-sans">MISSION</h2>
+      <h3 class="noto-sans-jp">仕事は、してもいい</h3>
+    </div>
+  </section>
+
+  <section class="service-wire" id="what">
+    <div class="inner">
+      <h2 class="heading josefin-sans">What we do?</h2>
+      <div class="service-caset">
+        <h3 class="noto-sans-jp">AIアシスタント・AIエージェント作成代行</h3>
+        <p>Difyを中心とした「Wrapperツール」を用いて、RAG、ワークフロー、ベクトルDB、APIなどの統合的な管理をノーコードで行い、継続的なメンテナンスまで提供いたします。</p>
+      </div>
+      <hr>
+      <div class="service-caset">
+        <h3 class="noto-sans-jp">企業内への研修・インストール・チームビルド</h3>
+        <p>AIアシスタント・AIエージェントの管理業務、及びAIコーディング、AIと協働することを前提としたチームアップ及びマネジメント研修を提供いたします。</p>
+      </div>
+      <hr>
+      <div class="service-caset">
+        <h3 class="noto-sans-jp">AIパーソナリティの設計・キャラクタライズ（入魂作業）</h3>
+        <p>組織内での協働を開始したAI達に対し、その組織にふさわしい精神性・キャラクターをAIに投入する（入魂作業）業務を提供いたします。</p>
+      </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMeqJHFtc0XXdzml6AlzUdP1oWnmw2R4eADp-_aUXZp6bCZQ/viewform" class="cta" target="_blank">お気軽にお問合せください</a>
+    </div>
+  </section>
+
+  <section class="company-wire" id="company">
+    <div class="inner u-cf">
+      <h2 class="heading josefin-sans">COMPANY</h2>
+      <dl>
+        <dt>社名</dt>
+        <dd>株式会社LUVO</dd>
+      </dl>
+      <dl>
+        <dt>代表取締役</dt>
+        <dd>酒井 佑介</dd>
+      </dl>
+      <dl>
+        <dt>本社所在地</dt>
+        <dd>東京都目黒区祐天寺二丁目13番4号 <span>Pointline Yutenji 6H</span></dd>
+      </dl>
+      <dl>
+        <dt>資本金</dt>
+        <dd>5,000万円 <span>（2024年9月現在）</span></dd>
+      </dl>
+      <dl>
+        <dt>創業日</dt>
+        <dd>2024年9月2日</dd>
+      </dl>
+      <dl>
+        <dt>出資比率</dt>
+        <dd>株式会社キャスター 100%</dd>
+      </dl>
+      <dl class="w100">
+        <dt>主たる事業</dt>
+        <dd>生成AIを活用したプロダクト開発及びサービス運用</dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <img src="images/lovo-blk-logo.png" alt="LUVO">
+      <address>&copy; LUVO Co.,Ltd. All rights reserved.</address>
+      <ul>
+        <li><a href="privacypolicy.html">個人情報保護方針</a></li>
+        <li>/</li>
+        <li><a href="https://caster.co.jp/terms/">サービス利用規約</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    $(function() {
+      $('img').on('inview', function(event, isInView) {
+        if (isInView) {
+          $(this).addClass('img-blur');
+        } else {
+          $(this).removeClass('img-blur');
+        }
+      });
+    });
+  </script>
+  <script>
+    $(function() {
+      $('#nav-content li a').on('click', function(event) {
+        $('#nav-input').prop('checked', false);
+      });
+    });
+  </script>
+
+
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
