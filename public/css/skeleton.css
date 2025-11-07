@@ -191,7 +191,7 @@ body {
   color: #222;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #F7F6F2;
+  background-color: #ffffff;
 }
 
 /* Typography
@@ -577,7 +577,7 @@ section {
 
 h2.heading {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 40px;
 }
 
@@ -595,7 +595,7 @@ h2.heading {
 
 .service-caset h3 {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 40px;
   font-family: "noto";
 }
@@ -651,21 +651,6 @@ a.cta:hover {
   background:#203744;
 }
 
-.mission-area {}
-
-.mission-area h3 {
-  font-size: 105px;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
-
-.mission-area p {
-  line-height: 2;
-  font-weight: 700;
-  font-size: 28px;
-  letter-spacing: 2px;
-}
-
 .company-wire {}
 
 .company-wire dl {
@@ -703,6 +688,7 @@ footer {
 footer img {
   display: block;
   margin-bottom: 40px;
+  width: 200px;
 }
 
 address {
@@ -884,15 +870,6 @@ font-family: "Noto Sans JP", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
     font-size: 20px;
     width: 300px;
     height: 30px;
-  }
-
-  .mission-area h3 {
-    font-size: 32px;
-    font-weight: 900;
-  }
-
-  .mission-area p {
-    font-size: 16px;
   }
 
   .company-wire dl {
