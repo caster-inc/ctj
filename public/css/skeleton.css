@@ -854,6 +854,10 @@ font-family: "Noto Sans JP", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
 
 /* Larger than tablet */
 @media (max-width: 750px) {
+  .hero-area {
+    height: 40vh;
+  }
+
   .hero-area img {
     width: 80%;
   }
