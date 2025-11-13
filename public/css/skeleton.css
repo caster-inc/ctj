@@ -862,6 +862,10 @@ font-family: "Noto Sans JP", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
     width: 80%;
   }
 
+  .secondary-wire h1 img {
+    width: 200px;
+  }
+
   .service-caset p, .service-caset li {
     font-size: 14px;
   }
