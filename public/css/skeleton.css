@@ -655,7 +655,7 @@ a.cta:hover {
 
 .company-wire dl {
   float: left;
-  width: 44%;
+  width: 100%;
   margin: 40px 6% 0 0;
   padding-bottom: 40px;
   border-bottom: #ccc 1px solid;
