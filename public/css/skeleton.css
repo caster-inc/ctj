@@ -635,12 +635,11 @@ h2.heading {
 a.cta {
   border: solid 8px #203744;
   display: block;
-  width: 350px;
-  height: 35px;
+  width: 380px;
   text-align: center;
   font-size: 25px;
   color: #203744;
-  padding: 20px 0px;
+  padding: 20px;
   margin: 0px auto;
   text-decoration: none;
   font-weight: 900;
@@ -876,8 +875,7 @@ font-family: "Noto Sans JP", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial
 
   a.cta {
     font-size: 20px;
-    width: 300px;
-    height: 30px;
+    width: 280px;
   }
 
   .company-wire dl {
